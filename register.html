@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register with us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/e3870bf88a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Beau+Rivage&family=Poppins:ital,wght@1,400;1,600&family=Trispace:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-[#150E28]">
+    <nav
+      class="bg-inherit md:p-5 pl-3 py-3 md:flex md:items-center md:justify-between md:pr-36"
+    >
+      <div class="flex justify-between items-center md:pl-1 pl-6 md:relative">
+        <span
+          class="md:text-3xl text-xl font-extrabold cursor-pointer md:ml-28 text-white md:absolute md:left-[-3%] md:block hidden"
+        >
+          get<span
+            class="text-[#D434FE] md:text-3xl text-xl font-extrabold cursor-pointer"
+            >linked</span
+          >
+        </span>
+        <span class="hidden mx-3">
+          <img
+            class="mt-3 cursor-pointer"
+            onclick="onToggleMenu(this)"
+            name="menu"
+            src="images/Vector (1).png"
+            alt="dash"
+          />
+          <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#fe34b9]" onclick="onToggleMenu(this)" name="menu"></i> -->
+        </span>
+        <span
+          class="bg-inherit rounded-full border-2 border-[#D434FE] w-[30px] h-[30px] flex items-center justify-center md:hidden"
+          ><a href="index.html"
+            ><i class="fa-solid fa-angle-left text-white"></i></a
+        ></span>
+      </div>
+
+      <ul
+        class="nav-links md:flex md:items-end md:static md:z-[1] z-[1] absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:pt-0 pt-14 bg-[#150E28] w-full md:w-auto md:py-0 py-4 md:px-0 px-6 ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+      >
+        <li class="mx-6 md:my-1 my-4">
+          <a
+            class="capitalize text-lg text-white font-bold hover:text-[hsl(288,44%,54%)] duration-300"
+            href="index.html"
+            >timeline</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-4">
+          <a
+            class="capitalize text-white text-lg font-bold hover:text-[hsl(288,44%,54%)] duration-300"
+            href="#"
+            >overview</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-4">
+          <a
+            class="capitalize text-lg text-white font-bold hover:text-[hsl(288,44%,54%)] duration-300"
+            href="#"
+            >FAQs</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-4">
+          <a
+            class="capitalize text-lg font-bold text-white hover:text-[hsl(288,44%,54%)] duration-300 active"
+            href="contact.html"
+            >contact</a
+          >
+        </li>
+        <button
+          class="md:py-2 py-3 md:px-6 px-9 rounded-lg font-bold capitalize md:ml-20 md:mt-1 my-4 md:my-0 md:mx-0 mx-5 text-white duration-300 bg-transparent border-2 border-[#FF26B9]"
+        >
+          <a href="#" class="hover:text-[#FF26B9] duration-300 ease-in-out"
+            >register</a
+          >
+        </button>
+      </ul>
+    </nav>
+
+    <section
+      class="md:h-[700px] h-[950px] md:w-full w-full flex md:flex-row flex-col overflow-hidden"
+    >
+      <div
+        class="md:w-[45%] w-full md:h-full h-[25%] relative overflow-hidden md:pl-0 pl-[10%]"
+        id="diver"
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
+        <h2
+          class="text-[#D434FE] font-bold md:text-2xl text-lg md:hidden block"
+        >
+          Register
+        </h2>
+        <img
+          src="images/Purple-Lens-Flare-PNG.png"
+          class="absolute md:left-[-10%] left-[-12%] md:top-[-15%] top-[10%] md:w-[1500px] md:h-[800px] animate-pulse"
+          alt=""
+        />
+        <img
+          src="images/sata gra.png"
+          class="absolute md:w-[20px] w-[15px] md:left-[20%] md:right-[auto] right-[10%] md:top-[15%] top-[60%]"
+          alt="pink star"
+        />
+        <img
+          src="images/3d-graphic-designer-showing-thumbs-up-png 1 (1).png"
+          class="absolute md:w-[620px] w-[220px] md:right-0 right-[20%] md:bottom-6 bottom-[-6%]"
+          alt="graphic designer"
+        />
+        <img
+          src="images/star pu.png"
+          class="absolute md:w-[20px] md:bottom-[20%] md:right-[12%] animate-spin md:block hidden"
+          alt="purple star"
+        />
+        <img
+          src="images/star.png"
+          class="absolute md:w-[20px] md:left-[20%] md:bottom-[8%] animate-bounce md:block hidden"
+          alt="grey star"
+        />
+      </div>
+
+      <!-- big screen form -->
+
+      <div
+        class="md:h-full h-[70%] md:w-[55%] w-full md:pt-[5%] bg-left-top md:block hidden overflow-hidden"
+        style="background-image: url('images/Purple-Lens-Flare-PNG.png')"
+      >
+        <div
+          class="relative md:h-[450px] md:w-[500px] bg-inherit border border-[#D434FE] duration-300 ease-in md:ml-[10%] hidden items-center justify-center"
+          id="success-message"
+        >
+          <img
+            src="images/congratulation.png"
+            class="absolute md:w-[300px] md:left-[17%] md:top-0"
+            alt=""
+          />
+          <img
+            src="images/star.png"
+            class="absolute md:w-[20px] md:left-[15%] md:top-[30%] animate-bounce"
+            alt="grey star"
+          />
+          <p class="text-white md:text-2xl mt-56 text-center font-semibold">
+            Congratulations <br />
+            you have successfully Registered! <br />
+            <span class="text-sm"
+              >Yes, it was easy and you did it! <br />
+              check your mail box for next step
+            </span>
+          </p>
+          <img
+            src="images/1531010992wink-emoji-woman-png 1.png"
+            class="absolute md:w-[20px] md:right-[23%] md:bottom-[22%]"
+            alt=""
+          />
+
+          <button
+            class="absolute md:bottom-[8%] md:py-2 md:px-48 rounded-sm md:ml-[8%]"
+            style="
+              background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
+            "
+            value="back"
+          >
+            <a class="text-white font-semibold capitalize" href="Register.html">
+              back
+            </a>
+          </button>
+          <img
+            src="images/sata gra.png"
+            class="absolute md:w-[20px] md:right-[10%] md:bottom-2 animate-pulse"
+            alt="pink star"
+          />
+        </div>
+        <div
+          class="md:h-[600px] h-[100%] md:w-[620px] bg-no-repeat md:pl-[8%] md:pt-[5%] pl-[15%] relative rounded-lg md:bg-[auto] bg-none"
+          id="myForm"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          style="
+            background-image: url('images/Rectangle\ 10.png');
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          "
+        >
+          <img
+            src="images/star.png"
+            class="md:right-[30%] absolute md:w-[15px] top-3 md:block hidden"
+            id="new"
+            alt=""
+          />
+          <h2 class="text-[#D434FE] md:font-bold text-2xl md:block hidden">
+            Register
+          </h2>
+          <p
+            class="text-white md:mt-8 md:text-left text-left md:text-[auto] text-base"
+          >
+            Be part of this movement!
+            <span class="text-[#D434FE]">................................</span>
+          </p>
+          <img
+            src="images/1f6b6-2640 (1).png"
+            class="absolute md:right-[50%] md:top-[16%] md:block hidden"
+            alt=""
+          />
+          <img
+            src="images/image_processing20200511-10310-13mnlsx.png"
+            class="absolute md:right-[47%] md:top-[15.5%] md:block hidden"
+            alt="little man"
+          />
+          <h2
+            class="md:font-bold md:text-2xl text-lg text-white md:mt-3 mt-2 md:ml-0 ml-"
+          >
+            CREATE YOUR ACCOUNT
+          </h2>
+
+          <form action="" class="inline-block" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Team's Name</h3>
+            <input
+              type="text"
+              id="name"
+              class="placeholder:text-sm text-white md:w-[220px] md:h-[34px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter the name of your group"
+            />
+          </form>
+          <form action="" class="inline-block md:ml-8" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Phone</h3>
+            <input
+              type="tel"
+              id="number"
+              class="placeholder:text-sm text-white md:w-[220px] md:h-[34px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter your phone number"
+            />
+          </form>
+          <form action="" class="inline-block" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Email</h3>
+            <input
+              type="email"
+              id="email"
+              class="placeholder:text-sm text-white md:w-[220px] md:h-[34px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter your email address"
+            />
+          </form>
+          <form action="" class="inline-block md:ml-8" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Project Topic</h3>
+            <input
+              type="text"
+              class="placeholder:text-sm text-white md:w-[220px] md:h-[34px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="What is your group project"
+            />
+          </form>
+
+          <form class="inline-block">
+            <!-- <label for="cars">Choose a car:</label>  -->
+            <h3 class="text-white md:mt-4 md:mb-2">Category</h3>
+            <select
+              name="jobs"
+              id="jobs"
+              class="md:w-[220px] h-[34px] pl-5 text-white bg-transparent border-2 border-gray-400 rounded-sm"
+            >
+              <option value="select" class="pl-5 text-black">
+                Select your category
+              </option>
+              <option value="website" class="pl-5 text-black">
+                Website Design
+              </option>
+              <option value="graphic design" class="pl-5 text-black">
+                Graphic design
+              </option>
+              <option value="ui design" class="pl-5 text-black">
+                UI design
+              </option>
+            </select>
+          </form>
+          <form class="inline-block ml-8">
+            <!-- <label for="cars">Choose a car:</label> -->
+            <h3 class="text-white md:mt-4 md:mb-2">Group Size</h3>
+            <select
+              name="jobs"
+              id="jobs"
+              class="md:w-[220px] h-[34px] pl-5 text-white bg-transparent border-2 border-gray-400 rounded-sm"
+            >
+              <option value="select" class="pl-5 text-black">Select</option>
+              <option value="website" class="pl-5 text-black">3-5</option>
+              <option value="graphic design" class="pl-5 text-black">
+                5-10
+              </option>
+              <option value="ui design" class="pl-5 text-black">10-15</option>
+            </select>
+          </form>
+
+          <h2 class="text-[#FF26B9] text-sm mt-6">
+            Please review your registration details before submitting
+          </h2>
+          <input type="checkbox" class="mt-3" /><span
+            class="ml-3 text-white md:text-sm"
+            >I agreed with the event terms and conditions and privacy
+            policy</span
+          >
+
+          <button
+            class="md:px-48 md:py-2 md:mt-4 rounded-sm"
+            onclick="submitForm()"
+            style="
+              background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
+            "
+          >
+            <a
+              href="#"
+              class="text-white md:text-base hover:text-black duration-300 ease-in-out font-bold"
+              >Register Now</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- for smaller screens -->
+
+      <div
+        class="md:h-full h-[75%] md:w-[55%] w-full md:pt-[5%] md:hidden block overflow-hidden"
+      >
+        <div
+          class="relative h-[550px] md:w-[80%] mx-[10%] mt-[10%] bg-inherit border border-[#D434FE] md:ml-[10%] items-center duration-500 ease-in-out justify-center hidden"
+          id="success-text"
+        >
+          <img
+            src="images/congratulation.png"
+            class="absolute w-[250px] left-[5%] top-[5%]"
+            alt=""
+          />
+          <img
+            src="images/star.png"
+            class="absolute w-[15px] left-[10%] top-[40%] animate-bounce"
+            alt="grey star"
+          />
+          <p class="text-white text-lg mt-[240px] text-center font-semibold">
+            Congratulations <br />
+            you have successfully <br />
+            Registered! <br />
+            <br />
+            <span class="text-sm"
+              >Yes, it was easy and you did it! <br />
+              check your mail box for next step
+            </span>
+          </p>
+          <img
+            src="images/1531010992wink-emoji-woman-png 1.png"
+            class="absolute w-[15px] right-[5%] bottom-[26%]"
+            alt=""
+          />
+
+          <button
+            class="absolute bottom-[8%] py-4 px-24 rounded-sm ml-[10.5%]"
+            style="
+              background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
+            "
+            value="back"
+          >
+            <a class="text-white font-semibold capitalize" href="Register.html">
+              back
+            </a>
+          </button>
+          <img
+            src="images/sata gra.png"
+            class="absolute w-[15px] right-[10%] bottom-2 animate-pulse"
+            alt="pink star"
+          />
+        </div>
+
+        <div
+          class="h-[100%] w-full pt-[5%] relative rounded-lg md:bg-[auto]"
+          id="myNorm"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
+          <h2 class="text-[#D434FE] md:font-bold text-2xl md:block hidden">
+            Register
+          </h2>
+          <img
+            src="images/1f6b6-2640 (1).png"
+            class="absolute right-[22%] top-2"
+            alt="little woman"
+          />
+          <img
+            src="images/image_processing20200511-10310-13mnlsx.png"
+            class="absolute right-[17%] top-1"
+            alt="little man"
+          />
+          <p class="text-white text-center md:text-[auto] text-base ml-1">
+            Be part of this movement!
+            <span class="text-[#D434FE]">.............</span>
+          </p>
+          <img
+            src="images/1f6b6-2640 (1).png"
+            class="absolute md:right-[50%] md:top-[16%] md:block hidden"
+            alt=""
+          />
+          <img
+            src="images/image_processing20200511-10310-13mnlsx.png"
+            class="absolute md:right-[45%] md:top-[15.5%] md:block hidden"
+            alt="little man"
+          />
+          <h2
+            class="font-bold text-lg text-white text-center mt-1 ml-0 tracking-widest"
+          >
+            CREATE YOUR ACCOUNT
+          </h2>
+
+          <img
+            src="images/star.png"
+            class="absolute w-[15px] left-6 top-[18%] animate-bounce"
+            alt="grey star"
+          />
+          <form action="" class="ml-[16%] mt-4" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Team's Name</h3>
+            <input
+              type="text"
+              id="names"
+              class="placeholder:text-sm text-white w-[250px] h-[35px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter the name of your group"
+            />
+          </form>
+          <form action="" class="ml-[16%] mt-4" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Phone</h3>
+            <input
+              type="tel"
+              id="numbers"
+              class="placeholder:text-sm text-white w-[250px] h-[35px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter your phone number"
+            />
+          </form>
+
+          <form action="" class="ml-[16%] mt-4" required>
+            <h3 class="text-white md:mt-4 md:mb-2">Email</h3>
+            <input
+              type="email"
+              id="emails"
+              class="placeholder:text-sm text-white w-[250px] h-[35px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="Enter your email address"
+            />
+          </form>
+          <form action="" class="ml-[16%] mt-4">
+            <h3 class="text-white md:mt-4 md:mb-2">Project Topic</h3>
+            <input
+              type="text"
+              class="placeholder:text-sm text-white w-[250px] h-[35px] rounded-sm bg-transparent border-2 border-gray-400 pl-5"
+              placeholder="What is your group project"
+            />
+          </form>
+
+          <form class="ml-[16%] mt-4">
+            <!-- <label for="cars" class="ml-[-5%]">Choose a car:</label>  -->
+            <h3 class="text-white md:mt-4 md:mb-2">Category</h3>
+            <select
+              name="jobs"
+              id="jobs"
+              class="w-[250px] h-[35px] pl-5 text-white bg-transparent border-2 border-gray-400 rounded-sm"
+            >
+              <option value="select" class="pl-5 text-black w-[50px]">
+                Select your category
+              </option>
+              <option value="website" class="pl-5 text-black w-[50px]">
+                Website Design
+              </option>
+              <option value="graphic design" class="pl-5 text-black w-[50px]">
+                Graphic design
+              </option>
+              <option value="ui design" class="pl-5 text-black">
+                UI design
+              </option>
+            </select>
+          </form>
+          <form class="ml-[16%] mt-4">
+            <!-- <label for="cars">Choose a car:</label> -->
+            <img
+              src="images/star pu.png"
+              class="absolute w-[15px] bottom-[27%] right-7 animate-spin"
+              alt="purple star"
+            />
+            <h3 class="text-white md:mt-4 md:mb-2">Group Size</h3>
+            <select
+              name="jobs"
+              id="jobs"
+              class="w-[250px] h-[35px] pl-5 text-white bg-transparent border-2 border-gray-400 rounded-sm"
+            >
+              <option value="select" class="pl-5 text-black">Select</option>
+              <option value="website" class="pl-5 text-black">3-5</option>
+              <option value="graphic design" class="pl-5 text-black">
+                5-10
+              </option>
+              <option value="ui design" class="pl-5 text-black">10-15</option>
+            </select>
+          </form>
+          <p class="text-xs text-center mt-3 text-[#FF26B9]">
+            Please review your registration details before submitting
+          </p>
+          <input type="checkbox" class="mt-2 ml-[15%]" />
+          <span class="ml-2 text-white text-xs"
+            >I agreed with the event terms and conditions
+          </span>
+          <span class="ml-[22.5%] text-white text-xs">and privacy policy</span>
+          <br />
+          <button
+            class="px-6 py-3 mt-3 ml-[30%] rounded-lg"
+            onclick="submitNewForm()"
+            style="
+              background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
+            "
+          >
+            <a
+              href="#"
+              class="text-white text-base hover:text-black duration-300 ease-in-out font-bold"
+              >Register Now</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- small screen script -->
+
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

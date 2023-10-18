@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#earth,
+#spin,
+#bot {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#whitestar,
+#lightstar,
+#rdstar,
+#frthstar,
+#fifth,
+#sixth,
+#stargrey,
+#ash,
+#gray,
+#src,
+#small,
+#new {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#headerpara {
+  position: relative;
+  animation-name: slidein;
+  animation-duration: 5s;
+}
+
+@keyframes slidein {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+#act.active #won {
+  color: #fe34b9;
+}
+#act.active #twu {
+  color: #903aff;
+}
+#act.active #tree {
+  color: #d434fe;
+}
+#act.active #fur {
+  color: #a866fd;
+}
+
+/* slider divs */
+
+/* #slider{
+    position: absolute;
+    left: -100%;
+    animation: slide-in 4s forwards;
+}
+
+@keyframes slide-in {
+    to {
+      left: 0;
+    }
+  } */
+
+#slider1,
+#slider2 {
+  transition-duration: 3s;
+  transition: ease-in-out;
+}
