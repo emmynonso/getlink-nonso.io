@@ -93,3 +93,7 @@ html {
   transition-duration: 3s;
   transition: ease-in-out;
 }
+
+.faq.active .answer {
+  max-height: 200px;
+}
