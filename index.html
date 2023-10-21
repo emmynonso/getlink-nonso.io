@@ -28,6 +28,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
 
   <body class="bg-[#150E28]">
@@ -113,34 +114,7 @@
 
 
       //   contdown timer
-      function updateCountdown() {
-        const targetTime = new Date("01-10-2023");
-        targetTime.setHours(targetTime.getHours() + 23);
-        targetTime.setMinutes(targetTime.getMinutes() + 59);
-        targetTime.setSeconds(targetTime.getSeconds() + 30);
-
-        const now = new Date("01-10-2023");
-        const remainingTime = targetTime - now;
-
-        const hours = Math.floor(remainingTime / (1000 * 60 * 60));
-        const minutes = Math.floor(
-          (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-        document.getElementById(
-          "countdown-timer"
-        ).textContent = `${hours}hrs ${minutes}mins ${seconds}s`;
-
-        if (remainingTime <= 0) {
-          clearInterval(countdownInterval);
-          document.getElementById("countdown-timer").textContent =
-            "Countdown finished!";
-        }
-      }
-
-      const countdownInterval = setInterval(updateCountdown, 1000);
-
+      
 
 
     //   scroll button
@@ -183,7 +157,7 @@
           <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:top-[-45%] top-[25%] md:left-[10%] left-[-30%]" alt="flare">
           <img
             src="images/Creative 1.png"
-            class="absolute md:top-[6%] top-[-2%] md:left-[67%] left-[68%] md:w-[auto] w-[25px]"
+            class="absolute md:top-[5%] top-[-2%] md:left-[67%] left-[72%] md:w-[auto] w-[25px]"
             alt="bulb"
           />
           <h1
@@ -201,12 +175,12 @@
           </h1>
           <img
             src="images/chain-9365116-7621444.png"
-            class="absolute md:top-[28%] top-[16%] md:left-[74%] left-[71%] md:w-[auto] w-[35px]"
+            class="absolute md:top-[28%] top-[16%] md:left-[74%] left-[75%] md:w-[auto] w-[35px]"
             alt="chain"
           />
           <img
             src="images/1f4a5.png"
-            class="absolute md:top-[31%] top-[17%] md:left-[83%] left-[81%] md:w-[auto] w-[25px]"
+            class="absolute md:top-[31%] top-[17%] md:left-[83%] left-[85%] md:w-[auto] w-[25px]"
             alt="fire"
           />
           <div
@@ -352,15 +326,129 @@
         </div>
     </article>
 
-    <aside class="bg-inherit md:h-[800px] md:w-full h-[880px] flex md:flex-row flex-col border-y border-zinc-700 overflow-hidden">
-        <div class="md:h-full h-[55%] md:w-[45%] w-full relative md:pl-[10%] md:pt-[8%] md:px-[auto] px-4 md:pr-[5%]" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
+    <aside class="bg-inherit md:h-[800px] md:w-full h-[980px] flex md:flex-row flex-col border-y border-zinc-700 overflow-hidden">
+        <div class="md:h-full h-[65%] md:w-[45%] w-full relative md:pl-[10%] md:pt-[8%] md:px-[auto] px-4 md:pr-[5%] "
+         data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
             <img src="images/star pu.png" class="absolute md:w-[25px] w-[18px] md:top-[10%] top-[4%] md:left-[20%] left-[6%] animate-pulse" alt="purple star">
             <h2 class="md:text-2xl font-extrabold text-white md:text-left text-center">Frequently Asked <br>
               <span class="text-[#D434FE]">Question</span> </h2>
               <p class="text-white md:mt-3 md:mb-8 mb-3 md:text-left text-center md:text-[auto] text-sm">We got answers to the questions that you might <br>
                 want to ask about getlinked Hackathon 1.0</p>
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I work on a project I started before the hackathon?
+
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 cursor-pointer md:mt-3 mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer md:float-[auto] float-right"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
+                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
+                         your mind as it is for your body.</p>
+                    </div>
+
+                </div>
+
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">What happens if I need help during the <br class="md:hidden block"> hackathon?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">While some extreme diets may suggest otherwise, 
+                        we all need a balance of protein, fat, carbohydrates, fiber, vitamins, 
+                        and minerals in our diets to sustain a healthy body.</p>
+                    </div>
+
+                </div>
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">What happens if I don't have an idea for <br class="md:hidden block"> a project?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
+                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
+                         your mind as it is for your body.</p>
+                    </div>
+
+                </div>
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">Can I join a team or do I have to come <br class="md:hidden block"> with one?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
+                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
+                         your mind as it is for your body.</p>
+                    </div>
+                </div>
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">What happens after the hackathon <br class="md:hidden block"> ends?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
+                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
+                         your mind as it is for your body.</p>
+                    </div>
+                </div>
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
+                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
+                         your mind as it is for your body.</p>
+                    </div>
+
+                </div>
+                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
+                    <div class="question flex justify-between items-center">
+                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
+                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
+                    </div>
+                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
+                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion, 
+                        learn how to create—and stick to—a tasty, our mind as it is.</p>
+                    </div>
+
+                </div>
+                
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I work on a project I started before the hackathon?
                     <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
+                    
                     <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
                 <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">What happens if I need help during the <br class="md:hidden block"> hackathon?
                     <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
@@ -376,9 +464,25 @@
                     <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
                 <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I work on a project I started before the hackathon?
                     <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
+                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4"> -->
         </div>
-        <div class="md:h-full h-[45%] md:w-[55%] w-full relative" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+
+        <!-- // dropdown paragraph -->
+        <script>
+        
+      
+      const faqs = document.querySelectorAll(".faq");
+
+          faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+              faq.classList.toggle("active");
+            });
+          });
+        </script>
+        
+        
+
+        <div class="md:h-full h-[35%] md:w-[55%] w-full relative" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
             <img src="images/_ (1).png" class="absolute md:left-[12%] left-[17%] md:w-[auto] w-[25px] md:top-[8%] top-[8%] animate-bounce" alt="question">
             <img src="images/_ (1).png" class="absolute md:left-[27%] left-[34%] md:w-[auto] w-[32px] md:top-[3%] top-[3%] animate-bounce" alt="question">
             <img src="images/_ (1).png" class="absolute md:left-[42%] md:top-[8%] md:w-[auto] w-[25px] top-[8%] md:right-[auto] right-[40%] animate-bounce" alt="question">
