@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get link project2</title>
+    <title>Food site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/e3870bf88a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="foodapp.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,761 +20,451 @@
       href="https://fonts.googleapis.com/css2?family=Allura&family=Beau+Rivage&family=Poppins:ital,wght@1,400;1,600&family=Trispace:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    
   </head>
-
-  <body class="bg-[#150E28]">
-    <nav
-      class="bg-inherit p-5 md:flex md:items-center md:justify-between md:pr-36"
-    >
-      <div class="flex justify-between items-center md:pl-1 pl-6 md:relative">
-        <span
-          class="md:text-3xl text-xl font-extrabold cursor-pointer md:ml-48 text-white md:absolute md:left-[-3%]"
-        >
-          get<span class="text-[#D434FE] md:text-3xl text-xl font-extrabold cursor-pointer"
-            >linked</span
-          >
-        </span>
-        <span class="md:hidden block mx-3">
-          <img
-            class="mt-3 cursor-pointer"
-            onclick="onToggleMenu(this)"
-            name="menu"
-            src="images/Vector (1).png"
-            alt="dash"
-          />
-          <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#fe34b9]" onclick="onToggleMenu(this)" name="menu"></i> -->
-        </span>
-      </div>
-
-      <ul
-        class="nav-links md:flex md:items-end md:static md:z-[1] z-[1] absolute md:min-h-fit min-h-[60vh] 
-        left-0 top-[-100%] md:pt-0 pt-14 bg-[#150E28] w-full md:w-auto md:py-0 py-4 md:px-0 px-6
-         ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+  <body class="" style="background-image: url(image/background.jpg)">
+    <header class="bg-inherit">
+      <nav
+        class="w-[80%] flex justify-between items-center mx-auto h-auto px-4 py-2 bg-"
       >
-        <li class="mx-6 md:my-1 my-4">
-          <a
-            class="capitalize text-lg text-white font-bold hover:text-[hsl(288,44%,54%)] duration-300 active" id="act"
-            href="#"
-            ><span id="won">ti</span ><span id="twu">me</span><span id="tree">li</span><span id="fur">ne</span></a
+        <div>
+          <img class="h-100% w-32 rounded-sm" src="image/LOGO.png" alt="logo" />
+        </div>
+        <div class="bg- w-full py-2 flex flex-row justify-center ml-16">
+          <ul class="flex flex-row items-center justify-center gap-[4vw]">
+            <li>
+              <a
+                class="text-white uppercase font-semibold tracking-widest hover:text-slate-300 duration-300"
+                href=""
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white uppercase font-semibold tracking-widest hover:text-slate-300 duration-300"
+                href=""
+                >menu</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white uppercase font-semibold tracking-widest hover:text-slate-300 duration-300"
+                href=""
+                >our story</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white uppercase font-semibold tracking-widest hover:text-slate-300 duration-300"
+                href=""
+                >contact us</a
+              >
+            </li>
+          </ul>
+          <div class="flex bg-white w-28 rounded-full ml-6">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search"
+              class="w-full border-none bg-transparent px-2 py-1 outline-none"
+            />
+            <i class="fa-solid fa-magnifying-glass mt-2 mr-3"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-inherit" style="height: 600px">
+      <div class="h-full bg- w-full flex">
+        <div class="w-1/2 bg-inherit pt-6">
+          <h1
+            class="font-serif text-center text-white tracking-widest"
+            style="
+              font-family: 'Beau Rivage', cursive;
+              font-size: 120px;
+              text-transform: capitalize;
+              transform: rotate(-2deg);
+            "
           >
-        </li>
-        <li class="mx-6 md:my-1 my-4">
-          <a
-            class="capitalize text-white text-lg font-bold hover:text-[hsl(288,44%,54%)] duration-300"
-            href="#"
-            >overview</a
+            italian food
+          </h1>
+          <h2
+            class="text-left mx-16 my-6 tracking-wider uppercase text-white text-4xl font-semibold"
+            style="font-family: 'Poppins', sans-serif"
           >
-        </li>
-        <li class="mx-6 md:my-1 my-4">
-          <a
-            class="capitalize text-lg text-white font-bold hover:text-[hsl(288,44%,54%)] duration-300"
-            href="#"
-            >FAQs</a
+            native restuarant
+          </h2>
+          <button
+            class="bg-white rounded-2xl mx-16 my-8 px-8 py-1 hover:bg-slate-400 ease-in-out duration-300"
           >
-        </li>
-        <li class="mx-6 md:my-1 my-4">
-          <a
-            class="capitalize text-lg font-bold text-white hover:text-[hsl(288,44%,54%)] duration-300"
-            href="contact.html"
-            >contact</a
+            <a
+              href="#"
+              class="uppercase font-extrabold text-slate-700 text-xl tracking-wider leading-10"
+              >read more</a
+            >
+          </button>
+          <p
+            class="text-justify text-lg mx-16 font-medium text-white"
+            style="font-family: 'Poppins', sans-serif"
           >
-        </li>
-        <button
-          class="md:py-2 py-3 md:px-6 px-9 rounded-lg font-bold capitalize md:ml-20 md:mt-1 my-4 md:my-0 md:mx-0 mx-5 hover:text-white duration-300"
+            The best place to get the best meals of different varieties for both
+            catering and personal needs. we also engage in outdoor services of
+            different kinds. <br />
+            We are the best around!
+          </p>
+        </div>
+        <div class="w-1/2 relative bg-inherit overflow-hidden">
+          <div class="bg-inherit md:h-full">
+            <img
+              src="image/spag plate.png"
+              alt="spaghetti"
+              class="absolute"
+              style="top: -20%; left: 5%; min-width: 800px"
+            />
+            <img
+              src="image/sauce.png"
+              alt="sauce"
+              class="absolute"
+              style="top: 35%; width: 500px; right: 45%"
+            />
+            <img
+              src="image/leaves.png"
+              alt="leaves"
+              class="absolute"
+              style="top: 30%; left: 20%; width: 1600px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-white w-full h-96 pb-18" style="height: 600px">
+      <div class="bg-inherit" style="height: 200px">
+        <h3
+          class="text-center uppercase"
           style="
-            background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
+            font-family: 'Beau Rivage', cursive;
+            font-size: 90px;
+            text-transform: capitalize;
           "
         >
-          <a href="register.html">register</a>
-        </button>
-      </ul>
-    </nav>
-    <hr class="w-full border-1 border-zinc-700" />
-
-    <script>
-      // function Menu(e){
-      //     let list = document.querySelector (ul);
-      //     e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') ,
-      //     list.classList.add('opacity-100')) : (e.name = "menu" ,
-      //     list.classList.remove('top-[80px]') ,list.classList.remove('opacity-100'))
-
-      // }
-      
-
-    
-
-
-      //   contdown timer
-      
-
-
-    //   scroll button
-    
-
-
-
-    </script>
-
-    <script src="main.js"></script>
-    
-
-
-    <main
-      class="md:h-[628px] h-[800px] bg-inherit
-        bg-repeat w-full md:bg-left-top bg-center relative overflow-hidden" 
-    >
-      <div
-        class="w-full md:h-[20%] h-[12%] md:bg-inherit md:pr-20 pr-1 md:pt-8 pt-3 md:pl-48 pl-1 outline-none md:overflow-hidden"
-      >
-        <h1
-          class="md:text-right text-center font-bold md:text-4xl text-lg text-white font-[poppins] capitalize"
-        id="headerpara"> 
-          igniting a revolution in hr innovation
-        </h1>
-        <img
-          src="images/Vector 4.png"
-          class="float-right md:w-auto w-[130px] md:mr-0 mr-7"
-          alt=""
-        />
-        <img
-          src="images/starx.png" id="whitestar"
-          class="md:w-[20] w-[13px] md:ml-16 ml-28 md:mt-0 mt-8"
-          alt="star"
-        />
+          more about our kitchen
+        </h3>
+        <p
+          class="text-center capitalize text-xl"
+          style="font-family: 'Poppins', sans-serif; word-spacing: 4px"
+        >
+          a look into our menu, for different kinds of meals both <br />
+          african and intercontinental dishes for the best taste!
+        </p>
       </div>
-      <div class="bg-inherit h-[88%] flex md:flex-row flex-col overflow-visible">
+      <div class="w-full h-full bg-inherit flex flex-row">
         <div
-          class="h-[100%] md:w-[60%] w-full md:pt-24 pt-2 relative overflow-visible" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-          <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:top-[-45%] top-[25%] md:left-[10%] left-[-30%]" alt="flare">
+          class="w-4/12 h-full overflow-hidden relative flex flex-col-reverse"
+        >
           <img
-            src="images/Creative 1.png"
-            class="absolute md:top-[5%] top-[-2%] md:left-[67%] sm:left-[76%] left-[68%] md:w-[auto] w-[25px]"
-            alt="bulb"
+            src="image/plate 1.png"
+            class="absolute"
+            style="min-width: 900px; left: -42%; top: -35%"
+            alt=""
           />
-          <h1
-            class="md:text-6xl text-3xl font-extrabold text-white text-center tracking-wide absolute 
-            md:left-[23%] md:top-[15%] left-[25.5%] top-[5%]"
+          <br />
+          <h3
+            class="absolute text-2xl font-bold capitalize ml-28"
+            style="top: 75%; font-family: 'Poppins', sans-serif"
           >
-            getlinked Tech
-          </h1>
-          <h1
-            class="md:text-6xl text-3xl font-extrabold text-white md:text-center text-left absolute
-             md:left-[18%] left-[10%] md:top-[28%] top-[13%]
-             md:ml-[] ml-12 md:mt-3 mt-2 tracking-wide"
+            african salad
+          </h3>
+          <p class="text-justify pb-8 ml-28 text-lg">
+            Goes with rice of different <br />
+            or can be taken alone with drinks
+          </p>
+        </div>
+        <div
+          class="500 w-4/12 h-full overflow-hidden relative flex flex-col-reverse"
+        >
+          <img
+            src="image/plate 2.png"
+            class="absolute"
+            style="min-width: 900px; left: -42%; top: -35%"
+            alt=""
+          />
+          <h3
+            class="absolute text-2xl font-bold capitalize ml-28"
+            style="top: 75%; font-family: 'Poppins', sans-serif"
           >
-            Hackathon <span class="text-[#D434FE]">1.0</span>
-          </h1>
+            stirfried spaghetti
+          </h3>
+          <p class="text-justify mb-14 ml-28 text-lg">
+            Goes with any kind of protien <br />
+            or can be taken alone with drinks
+          </p>
+        </div>
+        <div
+          class="w-4/12 h-full overflow-hidden relative flex flex-col-reverse"
+        >
           <img
-            src="images/chain-9365116-7621444.png"
-            class="absolute md:top-[28%] top-[15%] md:left-[74%] left-[71%] md:w-[auto] w-[35px]"
-            alt="chain"
+            src="image/plate 3.png"
+            class="absolute"
+            style="min-width: 900px; left: -42%; top: -35%"
+            alt=""
           />
-          <img
-            src="images/1f4a5.png"
-            class="absolute md:top-[31%] top-[16%] md:left-[83%] left-[79%] md:w-[auto] w-[25px]"
-            alt="fire"
-          />
-          <div
-            class="bg-inherit w[-full] h-1/2 mt-4 flex md:flex-col flex-col-reverse"
+          <h3
+            class="absolute text-2xl font-bold capitalize ml-28"
+            style="top: 75%; font-family: 'Poppins', sans-serif"
           >
-            <div class="w-full h-1/2 md:pl- md:pt-10">
-              <button
-              onclick="('')"
-                class="md:py-3 py-3 md:px-10 px-12 rounded-lg font-bold capitalize absolute md:top-[40%] top-[48%] md:left-[5%] left-[7%]
-                md:ml-40 md:mt-20 my-4 md:my-0 md:mx-0 mx-28 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    to right,
-                    #fe34b9 0%,
-                    #903aff 100%
-                  );
-                "
-              >
-                <a class="hover:text-black text-white cursor-pointer" href="register.html">register</a>
-              </button>
-            </div>
-            <div class="w-full h-1/2 bg-inherit md:pl-52 md:pt-4 relative">
-              <p
-                class="text-white md:text-lg text-sm md:text-left text-center md:ml- absolute
-                 md:top-[130%] top-[98%] md:left-[23%] left-[12%]"
-              >
-                Participate in getlinked tech Hackathon 2023 stand <br />
-                a chance to win a Big prize
-              </p>
-              <img
-                src="images/star.png"
-                class="md:w-[20px] w-[15px] absolute animate-pulse md:left-[64%] left-[75%] md:top-[42%] top-[] md:bottom-[0%] bottom-[-63%] overflow-visible"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="md:ml-[] ml-[27%] text-white font-bold text-xl absolute md:top-[78%] top-[75%] md:left-[-4%]"
-            id="countdown-timer"
-          ></div>
-         
+            tomato sauce
+          </h3>
+          <p class="text-justify mb-14 ml-28 text-lg">
+            Goes with rice of different <br />
+            or can be taken alone with drinks
+          </p>
         </div>
-        <div class="h-[100%] md:w-[40%] w-full relative overflow-hidden" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out" >
-            <img src="images/star.png" id="lightstar" class="absolute md:w-[20px] w-[20px] md:left-0 left-[10%]" alt="star">
-            <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:top-[11%] md:left-[15%] overflow-hidden md:block hidden" alt="flare">
-          <img src="images/metrix 1.png" class="" alt="" />
-          <img
-            src="images/man-wearing-smart-glasses-touching-virtual-screen 1.png"
-            class="absolute md:top-[0%] top-[0%] md:h-[500px] h-[344px] md:w-[600px] w-[354px] md:left-[-10%]"
-            alt="man with glass"
-          />
-          <img src="images/Image 1.png" id="earth" class="absolute md:bottom-[45px] bottom-[25px]
-          md:left-[0] left-[10%] md:w-[450px] w-[280px] md:h-[435px] h-[270px]" alt="planet">
-        </div>
-        
-
-    </main>
-
-    
-    <section class="md:h-[900px] h-[1300px] bg-inherit w-full overflow-hidden">
-        <div class="md:h-1/2 h-1/2 border-y border-zinc-700 flex md:flex-row flex-col ">
-            <div class="bg-inherit md:w-1/2 w-full h-full relative" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <img src="images/sata gra.png" class="animate-pulse absolute md:left-[27%] left-[20%] md:w-[20px] w-[15px] 
-                md:top-[40%] top-[25%]" alt="pinkstar">
-                <img src="images/the big idea 1.png" class="absolute md:max-w-[320px] max-w-[200px] md:left-[40%] left-[22%]
-                 md:top-[10%] top-[22%]" alt="idea">
-                <p class="text-white font-bold font-sans absolute capitalize md:top-[44%] top-[50%] 
-                md:left-[57.5%] left-[39%]">the big</p>
-                <p class="text-white font-bold font-sans  absolute capitalize md:top-[49%] top-[55%] md:left-[59%] left-[42%]">idea</p>
-                <img src="images/arrow.png" class="absolute md:top-[80%] md:left-[80%] md:block hidden" alt=" curved arrow">
-            </div>
-            <div class="bg-inherit md:w-1/2 w-full h-full md:pt-28 relative md:px-0 px-5" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <img src="images/star pu.png" class="absolute animate-pulse md:w-[20px] w-[13px] md:right-[20%] right-[10%] md:top-[] top-[5%]" alt="purple star">
-                <h2 class="text-white md:text-left text-center md:text-4xl font-extrabold">Introduction to getlinked <br>
-                    <span class="text-[#D434FE]">tech Hackathon 1.0</span></h2>
-                    <p class="text-white md:mt-6 md:text-justify text-center md:text-[auto] text-sm">Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                        clear as day: <br> to shape the future. Whether you're a coding genius, a 
-                        design maverick, <br> or a concept wizard, you'll have the chance to transform 
-                        your <br> ideas into reality. Solving real-world problems, pushing the boundaries
-                        of technology, <br> and creating solutions that can change the world,
-                        that's what we're all about!</p>
-            </div>
-        </div>
-        <div class="bg-inherit h-1/2 w-full flex md:flex-row flex-col-reverse overflow-hidden">
-            <div class="md:bg-right-bottom bg-left-top md:h-full h-1/2 md:w-1/2 w-full md:pt-[7%] md:pl-[7%] md:px-0 px-8 relative" style="background-image: url('images/Purple-Lens-Flare-PNG.png');" 
-            data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <h2 class="md:text-3xl md:text-left text-center font-extrabold text-white">Rules and <br>
-                    <span class="text-[#D434FE]">Guidelines</span></h2>
-                    <img src="images/star.png" id="rdstar" class="absolute md:right-[45%] right-[10%] md:top-[17%] top-[10%] md:w-[15px] w-[15px]" alt="">
-                    <p class="md:mt-4 text-white md:text-justify text-center md:text-[auto] text-sm   md: mb-2">Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                        clear <br> as day: to shape the future. Whether you're a coding genius, <br>a 
-                        design maverick, or a concept wizard, you'll have the chance to transform <br>
-                        your ideas into reality. Solving real-world problems, pushing <br>the boundaries
-                        of technology, and creating solutions that can change the world, <br>
-                        that's what we're all about!</p>
-                    <img src="images/starx.png" id="frthstar" class="absolute md:right-0 md:left-[auto] left-[25%] md:w-[15px] w-[15px]" alt="white star">
-            </div>
-            <div class="md:bg-right-top bg-right-bottom bg-no-repeat relative md:h-full h-1/2 md:w-1/2 w-full" style="background-image: url('images/Purple-Lens-Flare-PNG-1.png');"
-            data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <img src="images/7450159 1.png" class="absolute md:w-[500px] w-[300px] md:bottom-[1%]
-                 bottom-[0.2%] md:left-[15%] left-[11%]" alt="man">
-                 <img src="images/starx.png" class="absolute md:hidden w-3 top-[50%] left-[15%]" alt="">
-            </div>
-        </div>
-    </section>
-
-    <article class="bg-inherit md:h-[800px] h-[900px] w-full flex md:flex-row flex-col border-y border-zinc-700 overflow-hidden">
-        <div class="md:w-[55%] w-full md:h-full h-[35%] bg-inherit relative" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <img src="images/star pu.png" class="absolute animate-pulse md:w-[20px] w-[15px] md:left-[25%] left-[50%] md:top-[5%]" alt="purple star">
-            <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:top-[25%] top-[25%] md:w-[750px] md:left-[-3%] left-[-13%]" alt="flare">
-            <img src="images/star.png" class="absolute animate-pulse md:top-[53%] top-[50%] md:w-[15px] w-[15px] left-[50%]" alt="grey star">
-            <img src="images/8046554 1.png" class="absolute md:w-[600px] md:top-[17%] md:left-[10%]" alt="people">
-            <img src="images/starx.png" id="fifth" class="absolute md:bottom-[15%] md:right-[10%] md:w-[15px] md:block hidden" alt="white star">
-        </div>
-        <div class="md:w-[45%] w-full md:h-full h-[65%] bg-inherit md:pt-8 md:pr-10 relative md:pl-0" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <h2 class="md:text-3xl font-extrabold text-white md:text-left text-center">Judging Criteria <br>
-                <span class="text-[#D434FE]">Key attributes</span></h2>
-                <p class="md:text-justify md:mx-0 mx-2 text-center text-xs md:text-base md:my-4 text-white my-4"><span class="font-bold text-[#FF26B9]">Innovation and Creativity:</span> Evaluate the uniqueness and creativity of the
-                    solution. <br> Consider whether it addresses a real-world problem in a novel 
-                    way or introduces innovative features.</p>
-                    <p class="md:text-justify md:text-base md:my-4 text-white md:mx-0 mx-2 text-center text-xs my-4"><span class="font-bold text-[#FF26B9]">Functionality:</span> Assess how well the solution works. Does it perform its 
-                        intended functions effectively and without major issues? Judges would
-                        consider the completeness and robustness of the solution.</p>
-                        <p class="md:text-justify md:text-base md:my-4 text-white md:mx-0 mx-2 text-center text-xs my-4"><span class="font-bold text-[#FF26B9]">Impact and Relevance:</span> Determine the potential impact of the solution 
-                            in the real world. Does it address a significant problem, and is it relevant 
-                            to the target audience? Judges would assess the potential social, 
-                            economic, or environmental benefits.</p>
-                            <p class="md:text-justify md:text-base md:my-4 text-white md:mx-0 mx-2 text-center text-xs my-4"><span class="font-bold text-[#FF26B9]">Technical Complexity:</span> Evaluate the technical sophistication of the solution. 
-                                Judges would consider the complexity of the code, the use of advanced 
-                                technologies or algorithms, and the scalability of the solution.</p>
-                                <p class="text-white md:text-justify md:text-base md:my-4 md:mx-0 mx-2 text-center text-xs my-4"><span class="font-bold text-[#FF26B9]">Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any 
-                                    other competition-specific requirements.</p>
-                                    <button
-                                    class="md:py-2 py-3 md:px-8 px-9 rounded-lg font-bold capitalize my-4 md:mt-14 md:ml-0 ml-[28%] hover:text-white duration-300"
-                                    style="
-                                      background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);
-                                    "
-                                  >
-                                    <a class="text-white hover:text-black" href="#">Read More</a>
-                                  </button>
-
-                                  <img src="images/Purple-Lens-Flare-PNG-1.png" class="absolute md:block hidden md:w-[350px] md:right-0 md:bottom-[-20%]" alt="">
-        </div>
-    </article>
-
-    <aside class="bg-inherit md:h-[800px] md:w-full h-[980px] flex md:flex-row flex-col border-y border-zinc-700 overflow-hidden">
-        <div class="md:h-full h-[65%] md:w-[45%] w-full relative md:pl-[10%] md:pt-[8%] md:px-[auto] px-4 md:pr-[5%] "
-         data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <img src="images/star pu.png" class="absolute md:w-[25px] w-[18px] md:top-[10%] top-[4%] md:left-[20%] left-[6%] animate-pulse" alt="purple star">
-            <h2 class="md:text-2xl font-extrabold text-white md:text-left text-center">Frequently Asked <br>
-              <span class="text-[#D434FE]">Question</span> </h2>
-              <p class="text-white md:mt-3 md:mb-8 mb-3 md:text-left text-center md:text-[auto] text-sm">We got answers to the questions that you might <br>
-                want to ask about getlinked Hackathon 1.0</p>
-
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 cursor-pointer md:mt-3 mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer md:float-[auto] float-right"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
-                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
-                         your mind as it is for your body.</p>
-                    </div>
-
-                </div>
-
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">What happens if I need help during the <br class="md:hidden block"> hackathon?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">While some extreme diets may suggest otherwise, 
-                        we all need a balance of protein, fat, carbohydrates, fiber, vitamins, 
-                        and minerals in our diets to sustain a healthy body.</p>
-                    </div>
-
-                </div>
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">What happens if I don't have an idea for <br class="md:hidden block"> a project?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
-                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
-                         your mind as it is for your body.</p>
-                    </div>
-
-                </div>
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">Can I join a team or do I have to come <br class="md:hidden block"> with one?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
-                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
-                         your mind as it is for your body.</p>
-                    </div>
-                </div>
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">What happens after the hackathon <br class="md:hidden block"> ends?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
-                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
-                         your mind as it is for your body.</p>
-                    </div>
-                </div>
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion and 
-                        learn how to create—and stick to—a tasty, varied, and nutritious diet that is as good for
-                         your mind as it is for your body.</p>
-                    </div>
-
-                </div>
-                <div class="faq md:w-[100%] border-b-2 border-[#D434FE] md:pb-3 pb-1 md:mt-4 mt-2 cursor-pointer md:mt-6">
-                    <div class="question flex justify-between items-center">
-                      <h3 class="text-white md:text-base text-sm">Can I work on a project I started before the hackathon?</h3>
-                      <i class="fa-solid fa-plus text-[#D434FE] cursor-pointer"></i>
-                    </div>
-                    <div class="answer mt-2 max-h-0 overflow-hidden duration-500 ease-in-out">
-                      <p class="text-white md:text-base text-sm" id="para1">By using these simple tips, you can cut through the confusion, 
-                        learn how to create—and stick to—a tasty, our mind as it is.</p>
-                    </div>
-
-                </div>
-                
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I work on a project I started before the hackathon?
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">What happens if I need help during the <br class="md:hidden block"> hackathon?
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4 ">
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">What happens if I don't have an idea for <br class="md:hidden block"> a project?
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I join a team or do I have to come <br class="md:hidden block"> with one?
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">What happens after the hackathon <br class="md:hidden block"> ends
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4">
-                <p class="text-white md:mb-4 mb-1 md:text-left text-left text-sm">Can I work on a project I started before the hackathon?
-                    <i class="fa-solid fa-plus float-right text-[#D434FE] cursor-pointer"></i></p>
-                    <hr class="bg-[#D434FE] py-[0.5px] md:mb-7 mb-4"> -->
-        </div>
-
-        <!-- // dropdown paragraph -->
-        <script>
-        
-      
-      const faqs = document.querySelectorAll(".faq");
-
-          faqs.forEach((faq) => {
-            faq.addEventListener("click", () => {
-              faq.classList.toggle("active");
-            });
-          });
-        </script>
-        
-        
-
-        <div class="md:h-full h-[35%] md:w-[55%] w-full relative" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <img src="images/_ (1).png" class="absolute md:left-[12%] left-[17%] md:w-[auto] w-[25px] md:top-[8%] top-[8%] animate-bounce" alt="question">
-            <img src="images/_ (1).png" class="absolute md:left-[27%] left-[34%] md:w-[auto] w-[32px] md:top-[3%] top-[3%] animate-bounce" alt="question">
-            <img src="images/_ (1).png" class="absolute md:left-[42%] md:top-[8%] md:w-[auto] w-[25px] top-[8%] md:right-[auto] right-[40%] animate-bounce" alt="question">
-            <img src="images/cwok_casual_21 1.png" class="absolute md:w-[650px] w-[300px] md:top-[10%] top-[15%] md:left-[auto] left-[5%]" alt="man in cloud">
-            <img src="images/sata gra.png" class="absolute md:top-[22%] top-[3%] md:left-[17%] left-[47%] md:w-[25px] w-[15px] animate-pulse" alt="pink star">
-            <img src="images/sata gra.png" class="absolute md:top-[8%] top-[24%] md:left-[35%] left-[22%] md:w-[25px] w-[15px] animate-pulse" alt="pink star">
-            <img src="images/star.png" id="sixth" class="absolute md:top-[50%] top-[40%] md:left-[5%] left-[10%] md:w-[25px] w-[15px] " alt="grey star">
-            <img src="images/starx.png" class="absolute md:w-[auto] w-[12px] md:bottom-[8%] bottom-[5%] animate-bounce md:right-[38%] right-[10%]" alt="white star">
-        </div>
-    </aside>
-
-    <div class="bg-inherit md:h-[1100px] h-[1200px] md:w-full w-full ">
-        <div class="bg-inherit md:h-[10%] h-[10%] md:w-full" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <h2 class="text-center text-white font-bold md:text-3xl text-xl">Timeline</h2>
-            <p class="text-white md:text-[auto] text-sm text-center md:mt-4">Here is the breakdown of the time we anticipate <br>
-                using for the upcoming event.</p>
-        </div>
-        <div class="bg-inherit md:h-[90%] h-[90%] md:w-full md:flex md:flex-row flex-col relative overflow-hidden">
-            <div class="bg-inherit md:h-full md:w-1/2 md:px-[5%] md:pl-[auto] relative" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <img src="images/star pu.png" class="absolute md:w-[25px] w-[15px] md:left-[33%] left-[15%] md:top-[8%] top-[-5%] animate-pulse" alt="">
-                <hr class="md:bg-[#D434FE] bg-[#D434FE] md:w-20 w-24 md:mt-24 md:h-0.5 rotate-90 absolute
-                 md:right-[-5.5%] md:left-[auto] left-[-7.5%] md:top-[auto] top-[13%]">
-                <img src="images/No 1.png" class="absolute md:w-[40px] w-[20px] md:top-[16.5%] top-[26%] md:right-[-2.8%] 
-                md:left-[auto] left-[3%]" alt="n01">
-
-                <h2 class="text-[#D434FE] md:text-right md:text-2xl text-sm font-bold md:mt-[170px] md:ml-0 ml-[10%]">Hackathon Announcement</h2>
-                <p class="md:text-right text-white md:text-[auto] text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">The getlinked tech hackathon 1.0 is formally announced <br>
-                    to the general public and teams begin to get ready to register</p>
-                    <hr class="bg-[#D434FE] md:top-[26%] top-[45%] md:h-0.5 rotate-90 absolute md:w-20 w-28
-                    md:left-[auto] left-[-9.5%] md:right-[-5.5%]">
-                    <img src="images/No 2.png" class="absolute md:w-[40px] w-[20px] md:top-[32%] top-[61%]
-                    md:left-[auto] left-[3%] md:right-[-2.8%]" alt="n02">
-                    
-                    <h2 class="md:text-right text-[#D434FE] md:text-2xl font-bold md:mt-[82px] mt-10 text-sm md:ml-0 ml-[10%]">November 18, 2023</h2>
-                    <hr class="bg-[#D434FE] md:w-20 w-28 md:right-[-5.5%] md:top-[41%] top-[81%]
-                    md:left-[auto] left-[-9.5%] md:h-0.5 rotate-90 absolute">
-                    <img src="images/No 3.png" class="absolute md:w-[40px] w-[20px] md:top-[46%] md:bottom-[auto] bottom-[0%] md:right-[-2.8%]
-                    md:left-[auto] left-[3%]" alt="n03">
-                    <h2 class="text-[#D434FE] md:text-right md:text-2xl font-bold md:mt-[104px] mt-10 text-sm md:ml-0 ml-[10%] ">Teams Registration ends</h2>
-                    <p class="md:text-right text-white text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">Interested Participants are no longer Allowed to <br>
-                        register</p>
-                        <hr class="bg-[#D434FE] md:top-[55%] md:h-0.5 rotate-90 absolute md:w-20 w-24 md:bottom-[auto] bottom-[-12%]
-                        md:left-[auto] left-[-7.5%] md:right-[-5.5%]">
-                        <img src="images/No 4.png" class="absolute md:w-[40px] w-[20px] md:top-[61%] md:bottom-[auto] bottom-[-28%] md:right-[-2.8%] 
-                        md:left-[auto] left-[3%]" alt="n04">
-                        <h2 class="text-[#D434FE] md:text-right md:text-2xl font-bold md:mt-[85px] mt-10 text-sm md:ml-0 ml-[10%]">November 18, 2023</h2>   
-                        <hr class="bg-[#D434FE] md:top-[70%] md:h-0.5 rotate-90 absolute md:w-20 w-36
-                        md:bottom-[auto] bottom-[-45%] md:left-[auto] left-[-14%] md:right-[-5.5%]">
-                        <img src="images/No 5.png" class="absolute md:w-[40px] w-[20px] md:bottom-[auto] bottom-[-67%] md:top-[75.5%]
-                        md:left-[auto] left-[3%] md:right-[-2.8%]" alt="n05">
-                        <hr class="bg-[#D434FE] md:bottom-[14.5%] bottom-[-85%] md:h-0.5 rotate-90 absolute md:w-20 w-32
-                        md:left-[auto] left-[-12%] md:right-[-5.5%]">
-                        <img src="images/No 6.png" class="absolute md:w-[40px] w-[20px] md:bottom-[5%] bottom-[-105%] md:right-[-2.8%]
-                        md:left-[auto] left-[3%] " alt="n06">
-                        <h2 class="text-[#D434FE] md:text-right text-leftt md:text-2xl font-bold md:mt-[110px] mt-10 text-sm md:ml-0 ml-[10%]">Getlinked Hackathon 1.0 Offically Begins</h2>
-                        <p class="md:text-right text-white text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">Accepted teams can now proceed to build their <br>
-                            ground breaking skill driven solutions</p>   
-                        <h2 class="text-[#D434FE] md:text-right md:text-2xl font-bold md:mt-[90px] mt-10 text-sm md:ml-0 ml-[10%]">November 18, 2023</h2>   
-                        
-                        
-            </div>
-            <div class="bg-inherit md:h-full md:w-1/2 md:px-[5%] md:block">
-                <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-[170px] mt-10 text-sm md:ml-0 ml-[10%]">October 7th, 2023</h2>
-                <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-[118px] mt-10 text-sm md:ml-0 ml-[10%]">Teams Registration begins</h2>
-                <p class="md:text-left text-white text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">Interested teams can now show their interest in the <br>
-                    getlinked tech hackathon 1.0 2023 by proceeding <br class="md:hidden block"> to register</p>
-                    <img src="images/starx.png" class="absolute md:w-[25px] w-[15px] md:right-[23%] right-[10%] md:mt-4" id="spin" alt="">
-                    <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-[70px] mt-10 text-sm md:ml-0 ml-[10%]">October 7th, 2023</h2>
-                    <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-[116px] mt-10 text-sm md:ml-0 ml-[10%]">Announcement of the accepted teams <br class="md:hidden block"> and ideas</h2>
-                    <p class="md:text-left text-white text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">All teams whom idea has been accepted into getlinked <br class="md:hidden block"> tech <br class="md:block hidden">
-                        hackathon 1.0 2023 are formally announced</p>
-                        <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-20 mt-10 text-sm md:ml-0 ml-[10%]">October 7th, 2023</h2>
-                        <h2 class="md:text-left text-[#D434FE] font-bold md:text-2xl md:mt-[122px] mt-10 text-sm md:ml-0 ml-[10%]">Demo Day</h2>
-                        <p class="md:text-left text-white text-left text-xs md:ml-0 ml-[10%] md:mt-0 mt-2">Teams get the opportunity to pitch their projects <br class="md:hidden block"> to judges.
-                            The winner of the hackathon will also be <br class="md:hidden block"> announced on
-                            this day</p>
-
-
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="bg-white w-full" style="height: 200px"></div>
+    <div class="bg-white w-full pt-10" style="height: 150px">
+      <button
+        class="py-4 px-14 bg-zinc-700 rounded-full absolute hover:bg-gray-600 ease-in-out duration-300"
+        style="left: 42%"
+      >
+        <a
+          href="#"
+          class="text-center text-white font-bold uppercase"
+          style="letter-spacing: 0.25rem; line-height: 1.75rem; font-size: 20px"
+          >show more</a
+        >
+      </button>
+    </div>
+    <article class="bg-zinc-800 h-fit">
+      <!-- 1st part of article -->
+      <div class="bg-inherit h-1/3 pt-4">
+        <h1
+          class="text-center text-white tracking-widest"
+          style="
+            font-family: 'Beau Rivage', cursive;
+            font-size: 80px;
+            text-transform: capitalize;
+            font-weight: 800;
+          "
+        >
+          italian native restuarant
+        </h1>
+      </div>
+      <div class="bg-inherit h-60 flex flex-row py-5 px-44">
+        <p class="text-justify text-base font-semibold text-gray-200">
+          Healthy eating doesn’t have to be overly complicated. If you <br />
+          feel overwhelmed by all the conflicting nutrition and diet advice out
+          there,<br />
+          you’re not alone. It seems that for every expert who tells you a
+          certain <br />
+          food is good for you, you’ll find another saying exactly the opposite.
+        </p>
+        <p class="text-justify ml-10 text-base font-semibold text-gray-200">
+          The truth is that while some specific foods or nutrients have been
+          shown <br />
+          to have a beneficial effect on mood, it’s your overall dietary pattern
+          that <br />
+          is most important. The cornerstone of a healthy diet should be to
+          replace <br />
+          processed food with real food whenever possible.
+        </p>
+      </div>
+      <div class="bg-inherit h-28 w-full">
+        <button
+          class="rounded-2xl py-1 px-12 bg-white absolute hover:bg-slate-400 ease-in-out duration-300"
+          style="left: 44%"
+        >
+          <a
+            href="#"
+            class="text-xl text-gray-700 font-bold tracking-widest leading-10 uppercase"
+            >more info</a
+          >
+        </button>
+      </div>
+      <!-- 2nd part of article -->
+      <div class="bg-white w-full relative" style="height: 1400px">
+        <!-- div for enclosing -->
+        <div
+          class="w-full bg-red-400 flex flex-row h-1/2"
+          style="border-bottom: 4px black"
+        >
+          <!-- div 1 for plate -->
+          <div class="h-full bg-white w-1/2 overflow-hidden">
+            <img
+              src="image/plate 3.png"
+              class="absolute drop-shadow-2xl"
+              style="min-width: 1800px; left: -35%; bottom: 10%"
+              alt=""
+            />
+          </div>
+          <!-- div 2 for write up -->
+          <div class="bg-white w-1/2 h-full pt-40 overflow-hidden">
+            <h2
+              class="capitalize text-6xl font-bold text-gray-800 tracking-wider"
+            >
+              discount up to <br />
+              50% all excursions
+            </h2>
+            <p class="pt-10 text-2xl text-gray-800">
+              The cornerstone of a healthy diet should be to replace <br />
+              processed food with real food whenever possible. <br />
+              Eating food that is as close as possible to the way nature <br />
+              made it can make a difference to the way you think and feel.
+            </p>
 
-    <aside class="bg-[#100B20] md:h-[700px] h-[800px] w-full flex md:flex-row flex-col border-y border-black overflow-hidden">
-        <div class="md:w-[45%] w-full md:bg-inherit md:h-full h-3/5  relative " data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <h2 class="text-white text-center md:text-2xl font-bold md:hidden block mt-12">Prizes and <br><span class="text-[#D434FE]">Rewards</span></h2>
-            <p class="text-white mt-0 text-sm text-center md:hidden block ">Highlight of the prizes or rewards for winners and <br>
-                for participants.
-                </p>
-            <img src="images/sata gra.png" class="absolute md:w-[25px] w-[15px] md:left-[40%] left-[10%] md:top-[10%] top-[10%] animate-bounce" alt="purple star">
-            <img src="images/sata gra.png" class="absolute md:hidden block  w-[15px] top-[15%] right-[25%] animate-pulse" alt="purple star">
-            <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:w-[800px] w-[400px] md:top-[auto] top-[10%] md:right-[-30%] md:left-[auto] left-[-10%]" alt="">
-            <img src="images/9486889 1.png" class="absolute md:w-[500px] w-[280px] md:right-0 md:left-[auto] 
-            left-[10%] md:top-[20%] top-[40%]" alt="">
-            <img src="images/starx.png" class="absolute md:w-[20px] w-[15px] md:left-[50%] left-[15%] md:bottom-[10%] bottom-2 animate-bounce" alt="white star">
+            <button
+              class="bg-zinc-800 py-4 px-16 mt-12 rounded-full cursor-pointer hover:bg-gray-800 ease-in-out duration-300"
+            >
+              <a
+                href="#"
+                class="text-white uppercase text-3xl font-bold tracking-widest"
+                >read more</a
+              >
+            </button>
+          </div>
         </div>
-        <div class="md:w-[55%] w-full md:h-full h-2/5 md:pl-[10%] md:pt-6 relative " data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <h2 class="text-white md:text-left md:text-2xl font-bold md:block hidden">Prizes and <br><span class="text-[#D434FE]">Rewards</span></h2>
-            <p class="text-white mt-4 md:block hidden">Highlight of the prizes or rewards for winners and <br>
-                for participants.
-                </p>
-                <img src="images/starx.png" class="absolute md:w-[20px] md:left-[10%] md:top-[27%] animate-pulse md:block hidden" alt="white star">
-                
-                <img src="images/Rectangle 19.png" class="absolute md:w-[180px] w-[90px] md:left-[5%] left-[8%]
-                md:top-[auto] top-[20%] md:bottom-[15%]" alt="rectange">
-                <img src="images/silver_medal 1.png" class="absolute md:left-[7%] left-[9.5%] md:top-[40%] top-[8%]
-                 md:w-[150px] w-[80px] 
-                " alt="silver">
-                <p class="absolute text-white md:top-[65%] top-[35%] md:left-[10%] left-[11%] md:text-xl 
-                text-sm tracking-widest text-center font-semibold"><span class="md:text-3xl font-bold">2nd</span> <br>Runner <br><span class="text-[#D434FE] font-extrabold tracking-wide">N300,000</span></p>
-                <p class="absolute text-white md:top-[68%] top-[40%] md:left-[38%] left-[40%] md:text-xl text-sm tracking-widest text-center font-semibold">
-                <span class="md:text-3xl text-sm font-bold">1st</span> <br>Runner <br><span class="text-[#903AFF] font-extrabold tracking-wide">N400,000</span></p>
-                <p class="absolute text-white md:top-[65%] top-[35%] md:left-[66%] md:text-xl text-sm tracking-widest text-center font-semibold
-                md:right-[auto] right-[11%]">
-                <span class="md:text-3xl text-sm font-bold">2nd</span> <br>Runner <br><span class="text-[#D434FE] font-extrabold tracking-wide">N150,000</span></p>
-                <img src="images/Rectangle 20.png" class="absolute md:w-[180px] w-[90px] md:left-[33%] left-[37%] md:bottom-[11%]
-                md:top-[auto] top-[18%] " alt="rectange">
-                <img src="images/gold_medal 1.png" class="absolute md:top-[30%] md:w-[250px] w-[125px] md:left-[28.5%] left-[32.5%] " alt="gold">
-                <img src="images/Purple-Lens-Flare-PNG-1.png" class="absolute md:right-[-18%] right-[-23%] md:bottom-[-15%] bottom-[20%] md:w-[350px] w-[200px]" alt="flare">
-                <img src="images/Rectangle 19.png" class="absolute md:w-[180px] w-[90px] md:right-[17%] right-[8%] md:bottom-[15%] 
-                md:top-[auto] top-[20%]" alt="rectange">
-                <img src="images/starx.png" class="absolute md:w-[20px] w-[15px] md:right-[15%] right-[10%] md:top-[40%] animate-pulse" alt="white star">
-                <img src="images/bronze_medal 1.png" class="absolute md:right-[18.5%] right-[9.5%] md:top-[40%] top-[8%] md:w-[150px] w-[80px]" alt="bronze">
-                <img src="images/star.png" class="absolute md:w-[20px] w-[15px] md:right-[40%] right-[38%] md:bottom-[5%] bottom-[15%]" id="stargrey" alt="grey star">
+        <!-- div 2 for enclosing -->
+        <div class="bg-white h-1/2 flex flex-row overflow-hidden">
+          <!-- div for write up -->
+          <div class="bg-inherit w-1/2 pl-40 pt-40">
+            <h2
+              class="capitalize text-6xl font-bold text-gray-800 tracking-wider"
+            >
+              january's promo: <br />
+              buy 1 get 1 free!
+            </h2>
+            <p class="pt-10 text-2xl text-gray-800">
+              By using these simple tips, you can cut through <br />
+              the confusion and learn how to create—and stick <br />
+              to—a tasty, varied, and nutritious diet that is as <br />
+              good for your mind as it is for your body.
+            </p>
+            <button
+              class="bg-zinc-800 py-4 px-16 mt-12 rounded-full cursor-pointer hover:bg-gray-800 ease-in-out duration-300"
+            >
+              <a
+                href="#"
+                class="text-white uppercase text-3xl font-bold tracking-widest"
+                >read more</a
+              >
+            </button>
+          </div>
+          <!-- div for plate -->
+          <div class="w-1/2 bg-white relative">
+            <img
+              src="image/plate 2.png"
+              class="absolute"
+              style="min-width: 1800px; right: -75%; bottom: -75%"
+              alt=""
+            />
+          </div>
         </div>
-    </aside>
+      </div>
 
-    <article class="md:bg-inherit md:h-[700px] h-[450px] border-yellow-300 overflow-hidden">
-        <div class="md:w-full md:h-[28%] h-[25%] md:pt-16 pt-4 relative" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <h2 class="md:text-center md:text-3xl text-white font-bold text-center text-lg">Partners and Sponsors</h2>
-            <p class="md:text-center md:text-base text-white md:mt-4 text-xs text-center">Getlinked Hackathon 1.0 is honored to have the <br class="md:hidden block"> following major <br class="md:block hidden">
-                companies as its partners and <br class="md:hidden block"> sponsors</p>
-            <!-- <img src="images/star pu.png" class="md:w-[25px] md:left-[15%] animate-bounce absolute" alt="purple star"> -->
+      <!-- pizza div -->
+
+      <div class="w-full pt-24 relative" style="height: 1000px; background-image: url(image/background.jpg); background-repeat: no-repeat;">
+      <h2 class=" tracking-wider text-center text-white " style="font-family: 'Beau Rivage', cursive;
+      font-size: 80px;
+      text-transform: capitalize;
+      font-weight: 800;">italian restuarant pizza package</h2>
+      <p class="text-center text-gray-300 font-normal text-2xl mt-6">The cornerstone of a healthy diet should be to replace processed <br>
+         food with real food whenever possible.</p>
+        <!-- <img src="image/leaves.png" class="absolute -rotate-45" style="bottom: 30%; left:55%;" alt="leaves"> -->
+        <img src="image/flowers.png" class="absolute rotate-12" style="width: 1330px; left: 0; bottom: 15%;" alt="">
+        <img src="image/pizza full.png" class="absolute" style="left: 22%; bottom: -25%;" alt="pizza">
+        <img src="image/pizza triangle.png" class="absolute" style="right: 30%; bottom: -47%;" alt="">
+      </div>
+      <!-- div for wordings -->
+      <div class="w-full bg-white" style="height: 800px;">
+        <div class="bg-inherit h-3/5 w-full pl-36 pt-36 flex">
+          <h3 class="text-center font-extrabold text-5xl tracking-widest mb-1" style="font-family: 'Beau Rivage', cursive;
+              text-transform: capitalize;">Delivery service</h3> <br>
+           <p class="mt-20 -ml-80 text-lg mr-20">By using these simple tips, you can cut <br>
+               through the confusion and learn how to <br>
+               create—and stick to—a tasty and nutritious diet</p>
+          <h3 class="text-center font-extrabold text-5xl tracking-widest mb-1" style="font-family: 'Beau Rivage', cursive;
+              text-transform: capitalize;">online payment</h3> <br>
+           <p class="mt-20 -ml-80 text-lg mr-20">By using these simple tips, you can cut <br>
+               through the confusion and learn how to <br>
+               create—and stick to—a tasty and nutritious diet</p>
+          <h3 class="text-center font-extrabold text-5xl tracking-widest mb-1" style="font-family: 'Beau Rivage', cursive;
+              text-transform: capitalize;">outdoor services</h3> <br>
+           <p class="mt-20 -ml-80 text-lg">By using these simple tips, you can cut <br>
+               through the confusion and learn how to <br>
+               create—and stick to—a tasty and nutritious diet</p>
+          
         </div>
-        <div class="md:h-[72%] h-[75%] md:w-full px-[5%] md:px-[15%] md:py-0 py-[10%]">
-            <div class="border border-[#D434FE] md:h-[80%] h-[70%] md:py-[5%] relative" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-                 <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:w-[800px] w-[400px] md:top-[-70%] top-[-80%] 
-                 md:left-[-30%] left-[-30%]" alt="">
-                 <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:w-[800px] w-[400px]
-                  md:bottom-[-70%] bottom-[-90%] md:right-[-50%] right-[-65%]" alt="">
-                <img src="images/sata gra.png" class="md:w-[25px] w-[15px] md:left-[auto] left-[10%] md:right-[40%] md:top-[15%] animate-pulse absolute" alt="purple star">
-                 <img src="images/Line 17.svg" class="absolute 
-                 md:h-[auto] h-[40px] md:left-[35%] left-[35%] md:top-[17%] top-[20%]" alt="line">
-                <img src="images/Line 17.svg" class="absolute 
-                md:h-[auto] h-[40px] md:right-[35%] right-[35%] md:top-[17%] top-[20%]" alt="line">
-                 <img src="images/Liberty company logo white colour.png" class="absolute md:left-[15%] left-[15%] md:top-[20%] top-[22%] cursor-pointer
-                 md:w-[auto] w-[50px]" alt="">
-                 <img src="images/Liberty company logo white.png" class="absolute md:top-[25%] top-[30%] 
-                md:w-[auto] w-[70px] md:left-[40%] left-[40%] cursor-pointer" alt="">
-                <img src="images/Winwise logo White colour 1.png" class="absolute 
-                md:top-[20%] top-[22%] md:right-[15%] right-[15%] md:w-[auto] w-[50px] cursor-pointer" alt="">
-                <img src="images/Line 18.svg" class="absolute md:left-[12%] left-[10%] md:top-[50%] top-[50%] md:w-[200px] w-[75px] " alt="line">
-                <img src="images/Line 18.svg" class="absolute md:left-[39%] left-[38%] md:top-[50%] top-[50%] md:w-[220px] w-[75px]" alt="line">
-                <img src="images/Line 18.svg" class="absolute md:right-[12%] right-[10%] md:top-[50%] top-[50%] md:w-[200px] w-[75px]" alt="line">
-                 <img src="images/wisper logo white.png" class="absolute md:left-[15%] left-[15%] md:bottom-[20%] bottom-[22%] cursor-pointer
-                 md:w-[auto] w-[50px] " alt="">
-                <img src="images/Paybox.png" class="absolute 
-                md:w-[auto] w-[60px] md:bottom-[25%] bottom-[28%] md:left-[40%] left-[41%] cursor-pointer" alt="">
-               <img src="images/Vizual Plus.png" class="absolute 
-               md:w-[auto] w-[60px] md:bottom-[25%] bottom-[30%] md:right-[10%] right-[15%] cursor-pointer" alt="">
-               <img src="images/Line 17.svg" class="absolute 
-               md:h-[auto] h-[40px] md:left-[35%] left-[35%] md:bottom-[17%] bottom-[20%]" alt="line">
-                <img src="images/Line 17.svg" class="absolute md:right-[35%] right-[35%] md:bottom-[17%] bottom-[20%]
-                md:h-[auto] h-[40px]" alt="line">
-                <img src="images/starx.png" class="md:right-[40%] right-[10%] md:bottom-[5%] bottom-[5%] absolute md:w-[25px] w-[15px]" id="bot" alt="white star">
-                
-            </div>
+        <div class="w-full h-2/5 bg-inherit pt-14">
+          <p class="text-center text-2xl font-bold text-zinc-700">Eating a healthy diet is not about strict limitations, staying unrealistically thin, or <br>
+             depriving yourself of the foods you love. Rather, it’s about feeling great, <br>
+              having more energy, improving your health, and boosting your mood.</p>
+              <h3 class="text-center text-zinc-700 font-extrabold text-2xl mt-20">Best taste</h3>
+
+        </div>
+      </div>
+
+      <div class="w-full bg-zinc-800 relative" style="height: 700px;">
+        <h2 class="text-center text-white font-extrabold text-6xl capitalize pt-56" style="font-family: 'Poppins', sans-serif">subscribe to our newsletter</h2>
+          <p class="text-center text-3xl text-gray-300 capitalize mt-16 mb-6">to subscribe to our newsletter input your email below and register <br>
+          Healthy eating doesn’t have to be overly complicated.</p>
+          <img src="image/flowers.png" class="absolute" style="width: 1350px; bottom: -55%;" alt="flower">
+            <form action="">
+              <label for="email"></label>
+              <input type="email" class="h-20 text-3xl absolute left-1/4 mt-14 rounded-full" style="width: 700px;" name="email" id="email" placeholder="your mail">
+              <input type="button" value="subscribe" class="bg-zinc-700 hover:bg-green-900 ease-in-out duration-300 py-7 text-3xl tracking-wider uppercase font-extrabold rounded-full leading-8 px-8 absolute cursor-pointer" style="left: 57%; top: 71%; color: white; font-family: 'Poppins', sans-serif;">
+            </form>
         </div>
     </article>
 
-    <aside class="md:h-[950px] h-[1400px] md:w-full border-y border-zinc-600 flex md:flex-row flex-col overflow-hidden">
-        <div class="md:h-full h-[65%] md:w-1/2 w-full md:pl-[15%] md:pt-[5%] relative" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <img src="images/Purple-Lens-Flare-PNG.png" class="absolute md:w-[700px] w-[400px] md:bottom-[-20%] bottom-[5%] md:left-[-7%] left-[-25%]" alt="">
-            <img src="images/star pu.png" class="absolute md:right-0 right-[27%] md:w-[25px] w-[15px] md:top-[17%] top-3 animate-pulse" alt="purple star">
-            <h2 class="md:text-3xl md:text-left md:mt-0 mt-10 text-center text-white font-bold">Privacy Policy and <br>
-                <span class="text-[#D434FE]">Terms</span></h2>
-                <p class="text-gray-400 md:mt-6 mt-3 md:text-base md:text-left text-center">Last updated on September 12, 2023</p>
-                <p class="md:mt-6 mt-4 md:text-base text-sm md:text-left text-center text-white">Below are our privacy & policy, which outline a <br class="md:hidden block"> lot of goodies. <br class="md:block hidden"> 
-                    it’s our aim to always take of our <br class="md:hidden block"> participant.</p>
-                    <img src="images/star pu.png" class="md:hidden block w-[15px] right-10 animate-pulse absolute" alt="">
-                    <div class="md:w-[100%] md:mt-16 mt-8 md:mx-[auto] mx-[8%] md:ml-[] border border-[#D434FE] md:h-[500px] h-[650px] md:pl-10 md:py-10 relative">
-                        <p class="text-white md:text-justify text-center md:text-[auto] text-sm md:mt-0 mt-4 md:leading-normal leading-loose">At getlinked tech Hackathon 1.0, we <br class="md:hidden block"> value your privacy <br class="md:block hidden">
-                            and are committed <br class="md:hidden block"> to protecting your personal information. <br class="md:hidden block"> <br class="md:block hidden">
-                            This Privacy Policy outlines how we collect, <br class="md:hidden block"> use, disclose, <br class="md:block hidden">
-                            and safeguard your data <br class="md:hidden block"> when you participate in our tech <br class="md:block hidden">
-                            hackathon <br class="md:hidden block"> event. By participating in our event, you <br class="md:hidden block"> consent <br class="md:block hidden">
-                            to the practices described in this <br class="md:hidden block"> policy.</p>
-
-                        <h2 class="text-[#D434FE] font-bold md:text-base text-sm md:mt-4 mt-12 md:ml-0 ml-8">Licensing Policy</h2>
-                        <p class="md:text-base text-white md:mt-2 mt-3 md:text-center text-left md:text-[auto] text-sm md:ml-0 ml-8">Here are terms of our Standard License:</p>
-                        <p class="md:text-base text-white md:mt-4 mt-8 md:ml-10 ml-16 md:text-center text-left md:text-[auto] text-sm ">The Standard License grants you a <br class="md:hidden block">non-exclusive right to
-                            navigate and<br class="md:hidden block"> register for our event</p>
-                        <p class="md:text-base text-white md:mt-4 mt-4 md:ml-10 ml-16 text-sm">You are licensed to use the item<br class="md:hidden block"> available at any free source
-                            sites, for<br class="md:hidden block"> your project developement</p>
-                    <img src="images/list terms.png" class="absolute md:bottom-[41%] bottom-[35%] md:left-[auto] left-[9.5%]" alt="tick">
-                    <img src="images/star pu.png" class="absolute md:w-[25px] w-[15px] md:left-[-20%] left-[-8%] md:bottom-[32%] bottom-[25%] animate-pulse" alt="purple star">
-                    <img src="images/list terms.png" class="absolute md:bottom-[28%] bottom-[23%] md:left-[auto] left-[9.5%]" alt="tick">
-                    
-                <button class="md:py-3 py-2 md:px-8 px-6 rounded-md font-bold capitalize my-4 md:mb-6 md:mt-6 mt-8 md:ml-[30%] ml-[30%] hover:text-white duration-300" style="
-                    background: linear-gradient(to right, #fe34b9 0%, #903aff 100%);">
-                    <a class="text-white md:text-base text-sm hover:text-black" href="#">Read More</a>
-                </button>
-                    </div>
-                
-        </div>
-        <div class="md:h-full h-[35%] md:w-1/2 w-full relative" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
-            <img src="images/starx.png" class="md:w-[25px] w-[15px] absolute md:top-[17%] top-[15%] md:right-[40%] right-[28%] animate-bounce" alt="">
-            <img src="images/Vector.png" class="absolute md:w-[430px] w-[220px] md:left-[20%] left-[20%] md:top-[7%]" alt="vector">
-            <img src="images/08 1.png" class="absolute md:w-[450px] w-[250px] md:left-[12%] left-[12%] md:top-[23%] top-[15%]" alt="man">
-            <img src="images/star pu.png" class="absolute md:w-[20px] w-[15px] md:bottom-[42%] md:top-[auto] top-[10%] md:left-[32%] left-[10%] animate-pulse" alt="">
-            <img src="images/starx.png" class="absolute md:w-[20px] w-[15px] md:bottom-[33%] bottom-[25%] md:left-[22%] left-[20%]" id="ash" alt="">
-            <img src="images/star.png" class="absolute md:w-[20px] w-[15px] md:right-[20%] right-[15%] md:bottom-[28%] bottom-[25%]" alt="">
-        </div>
-    </aside>
-
-    <footer class="bg-[#100B20] md:h-[400px] h-[750px] md:w-full overflow-hidden">
-        <div class="md:h-[80%] h-full w-full flex md:flex-row flex-col relative">
-            <img src="images/starx.png" class="absolute md:w-[20px] w-[15px] md:top-[35%] top-[17%] md:left-[7%] left-6 animate-pulse" alt=""> 
-            <div class=" md:h-full h-2/5 md:w-1/2 w-full md:pl-[15%] pl-[15%] md:pt-16 pt-10" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out">
-                    <h2 class="md:text-3xl text-lg font-extrabold text-white">get<span class="text-[#D434FE] md:text-3xl text-lg font-extrabold cursor-pointer">linked</span</h2>
-                    <p class="md:text-base text-sm text-white font-normal md:mt-6 mt-6">Getlinked Tech Hackathon is a technology<br class="md:hidden block"> innovation program <br class="md:block hidden">
-                        established by a group<br class="md:hidden block"> of organizations with the aim of showcasing <br>
-                        young and talented individuals in the field<br class="md:hidden block"> of technology</p>
-
-                            <img src="images/Line 20.png" 
-                            class="absolute md:left-[44%] left-[40%] md:bottom-[15%]  md:top-[auto] top-[83.3%] " alt="">
-
-                        <p class="md:text-base text-sm text-white font-normal md:mt-14 mt-14">Terms of Use &nbsp;&nbsp;&nbsp;&nbsp; Privacy Policy</p>
-            </div>
-            <div class=" md:h-full h-[30%] md:w-1/4 w-full md:pt-16 md:pl-16 pl-[15%] relative" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <h2 class="md:text-base text-[#D434FE] font-bold">Useful Links</h2>
-                <img src="images/star.png" class="md:w-[15px] w-[10px] md:right-0 right-[20%] md:top-[auto] top-[35%] absolute" id="gray" alt="">
-                <ul class="md:block gap-3 text-white md:text-base text-sm">
-                    <li class="md:my-2 my-3"><a href="#">Overview</a></li>
-                    <li class="md:my-2 my-3"><a href="#">Timeline</a></li>
-                    <li class="md:my-2 my-3"><a href="#">FAQs</a></li>
-                    <li class="md:my-2 my-3"><a href="#">Register</a></li>
-                    <li class="text-[#D434FE] md:mt-12 font-bold">Follow us <span class="text-white text-lg cursor-pointer"><i class="fa-brands fa-instagram md:mx-2 mx-2 hover:text-pink-400"></i>
-                        <i class="fa-brands fa-x-twitter md:mx-2 mx-2 hover:text-gray-300"></i><i class="fa-brands fa-facebook-f md:mx-2 mx-2 hover:text-blue-500"></i>
-                        <i class="fa-brands fa-linkedin-in md:mx-2 mx-2"></i></span></li>
-                </ul>
-            </div>
-            <div class="md:h-full h-[30%] md:w-1/4 w-full md:pt-16 md:pl-16 pl-[15%] pt-4 relative" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <h2 class="md:text-base text-[#D434FE] font-bold">Contact Us</h2>
-                <p class="md:text-base text-sm text-white font-normal md:mt-2 mt-2 md:my-0 my-1"><i class="fa-solid fa-phone text-white mr-2 cursor-pointer"></i>+234 9099494972</p>
-                <p class="md:text-base text-sm text-white font-normal md:mt-4 mt-5 md:my-0 my-1"><i class="fa-solid fa-location-dot text-white mr-4 cursor-pointer"></i>1, Akpajo junction <br>
-                    <span class="md:ml-8 ml-7 md:my-0 my-1">Eleme 10029</span> <br>
-                    <span class="md:ml-8 ml-7 md:my-0 my-1"> Rivers State</p>
-                        <img src="images/sata gra.png" class="w-[15px] absolute left-[50%] bottom-16 md:hidden block" alt="">
-                        <p class="text-white md:text-center md:text-base text-sm md:hidden block mt-6 ml-6">All rights reserved. © getlinked Ltd.</p>
-                        <img src="images/starx.png" class="absolute md:w-[20px] w-[15px] md:bottom-[25%] bottom-[65%] md:right-[15%] right-10 animate-pulse" alt="">
-                       
-            </div>
-
-        </div>
-
-        <div class="md:h-[20%] md:w-full md:pt-6 md:block hidden relative"><img src="images/sata gra.png" class="absolute w-[20px] left-[50%] top-[-20%] animate-pulse" alt="pink star">
-            <p class="text-white md:text-center md:text-base">All rights reserved. © getlinked Ltd.</p></div>
-        
-            <button class="go-top-btn fixed md:right-[20px] right-4 md:bottom-[30px] bottom-5 bg-[#D434FE] md:w-[40px] w-[30px]
-            md:h-[40px] h-[30px] rounded-full hidden items-center justify-center animate-bounce">
-                <i class="fa-solid fa-arrow-up cursor-pointer text-2xl text-white"></i>
-            </button>
-
-            
-            
-            <script>
-                const goTopBtn = document.querySelector('.go-top-btn');
-
-                window.addEventListener('scroll', checkHeight)
-
-                function checkHeight(){
-                    if (window.scrollY > 1000) {
-                        goTopBtn.style.display = "flex"
-                    } else {
-                        goTopBtn.style.display = "none"
-                    }
-                }
-
-                goTopBtn.addEventListener('click', () => {
-                    window.scrollTo({
-                        top: 0
-                    })
-                })
-
-            </script>
-            
+    <footer class="bg-white w-full flex flex-row" style="height: 700px;">
+      <div class="h-full w-2/5 bg-inherit pt-64 pl-12">
+        <h3 class="text-5xl text-zinc-700 font-semibold capitalize tracking-wider">welcome</h3>
+        <p class="text-justify text-2xl mt-6 text-zinc-700">Eating a healthy diet is not about strict limitations, <br>
+           staying unrealistically thin, or depriving yourself of <br>
+           the foods you love. Rather, it’s about feeling great, <br>
+            having more energy and boosting your mood.</p>
+            <ul class="flex flex-row mt-8">
+              <li class="rounded-full py-1 px-2 bg-zinc-700 mx-3"><a href="#"><i class="fa-brands fa-instagram text-3xl text-white hover:text-pink-500 ease-in-out duration-300"></i></a></li>
+              <li class="rounded-full py-1 px-3 bg-zinc-700 mx-3"><a href="#"><i class="fa-brands fa-facebook-f text-3xl text-white hover:text-blue-300 ease-in-out duration-300"></i></a></li>
+              <li class="rounded-full py-1 px-2 bg-zinc-700 mx-3"><a href="#"><i class="fa-brands fa-twitter text-3xl text-white hover:text-blue-600 ease-in-out duration-300"></i></a></li>
+              <li class="rounded-full py-1 px-2 bg-zinc-700 mx-3"><a href="#"><i class="fa-brands fa-whatsapp text-3xl text-white hover:text-green-500 ease-in-out duration-300"></i></a></li>
+            </ul>
+      </div>
+      <div class="bg-inherit h-full w-1/5 pt-64 pl-16">
+        <h3 class="text-5xl text-zinc-700 font-semibold capitalize tracking-wider">about</h3>
+        <ul class="">
+          <li class="mt-6"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">history</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">our team</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">brand guideliness</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">terms & conditions</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="bg-inherit h-full w-1/5 pt-64 pl-16">
+        <h3 class="text-5xl text-zinc-700 font-semibold capitalize tracking-wider">services</h3>
+        <ul class="">
+          <li class="mt-6"><a href="#" class="capitalize text-2xl text-zinc-700 hover:font-bold ease-in-out duration-300">how to order</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">our product</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">order status</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">promo</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">payment method</a></li>
+        </ul>
+      </div>
+      <div class="bg-inherit h-full w-1/5 pt-64 pl-16">
+        <h3 class="text-5xl text-zinc-700 font-semibold capitalize tracking-wider">services</h3>
+        <ul class="">
+          <li class="mt-6"><a href="#" class="capitalize text-2xl text-zinc-700 hover:font-bold ease-in-out duration-300">quiz</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">contact us</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">help</a></li>
+          <li class="mt-3"><a href="#" class="capitalize text-zinc-700 text-2xl hover:font-bold ease-in-out duration-300">privacy</a></li>
+      </div>
+      
     </footer>
 
+    <script>
+      window.alert("Press OK to continue");
+    </script>
 
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>   
-        AOS.init(); 
-     </script>
   </body>
 </html>
